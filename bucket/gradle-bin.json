@@ -1,0 +1,27 @@
+{
+    "version": "3.5",
+    "description": "An open-source build automation tool focused on flexibility and performance. (Binaries only without documentation)",
+    "homepage": "https://gradle.org",
+    "license": "Apache-2.0",
+    "suggest": {
+        "JDK": [
+            "java/oraclejdk",
+            "java/openjdk"
+        ]
+    },
+    "url": "https://services.gradle.org/distributions/gradle-3.5.1-bin.zip",
+    "hash": "dfd82af0a954cf9df3b3deb630d585be3e578b79b58b1f3af5d2765871607128",
+    "extract_dir": "gradle-3.5",
+    "bin": "bin\\gradle.bat",
+    "checkver": {
+        "url": "https://gradle.org/install/",
+        "regex": "The current Gradle release is version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://services.gradle.org/distributions/gradle-$version-bin.zip",
+        "hash": {
+            "url": "$url.sha256"
+        },
+        "extract_dir": "gradle-$version"
+    }
+}
