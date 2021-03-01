@@ -9,12 +9,11 @@
     "url": [
               "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
               "https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/wxwork-install-context.reg"
-           ]
+           ],
     "hash": [
               "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
               "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585"
-           ]
-    "post_install": "Start-Process -Wait \"$dir\\$version\\wxdriveinstaller.exe\" -Verb RunAs",
+           ],
     "shortcuts": [
         [
             "WXWork.exe",
