@@ -8,7 +8,7 @@
     ],
     "url": [
               "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
-              "https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/wxwork-install-context.reg"
+              "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg"
            ],
     "hash": [
               "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
