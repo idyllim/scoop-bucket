@@ -8,11 +8,13 @@
     ],
     "url": [
               "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
-              "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg"
+              "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg",
+              "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-uninstall-context.reg"
            ],
     "hash": [
               "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
-              "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585"
+              "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585",
+              "a3d81e06a0a5fedd48ef93c2c738d563e6bdd2bca7e4ad2b3bf4bb9caf223d07"
            ],
     "shortcuts": [
         [
