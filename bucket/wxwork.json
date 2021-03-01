@@ -1,0 +1,49 @@
+{
+    "homepage": "https://work.weixin.qq.com/",
+    "description": "企业微信",
+    "version": "3.1.2.2211",
+    "license": "Freeware",
+    "url": [
+              "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
+              ""https://raw.githubusercontent.com/lukesampson/scoop-extras/master/scripts/wxwork-install-context.reg","
+           ]
+    "hash": [
+              "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
+              "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585"
+           ]
+    "post_install": "Start-Process -Wait \"$dir\\$version\\wxdriveinstaller.exe\" -Verb RunAs",
+    "shortcuts": [
+        [
+            "WXWork.exe",
+            "企业微信"
+        ]
+    ],
+    "post_install": [
+        "if (Test-Path \"$dir\\wxwork-install-context.reg\") {",
+        "  $content = Get-Content \"$dir\\wxwork-install-context.reg\"",
+        "  $content = $content.Replace('$wxwork', $dir)",
+        "  $content = $content.Replace('$ver', $version)",
+        "  $content = $content.Replace('$persist_dir', $persist_dir)",
+        "  $content = $content.Replace('$scoopdir', $scoopdir)",
+        "  $content = $content.Replace('$app', $app)",
+        "  if ($global) {",
+        "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "  }",
+        "  $content | Set-Content -Path \"$dir\\wxwork-install-context.reg\"",
+        "}",
+        "if (Test-Path \"$dir\\vscode-uninstall-context.reg\") {",
+        "  $content = Get-Content \"$dir\\vscode-uninstall-context.reg\"",
+        "  if ($global) {",
+        "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "  }",
+        "  $content | Set-Content -Path \"$dir\\vscode-uninstall-context.reg\"",
+        "}"
+    ],
+    "checkver": {
+        "url": "https://api.ziiyc.com/?url=https://work.weixin.qq.com/wework_admin/commdownload?platform=win&from=wwindex",
+        "regex": "WeCom_([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wechat.7z"
+    }
+}
