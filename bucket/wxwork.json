@@ -35,6 +35,7 @@
         "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
         "  }",
         "  $content | Set-Content -Path \"$dir\\wxwork-install-context.reg\"",
+        "  Invoke-Command {reg import $dir\\wxwork-install-context.reg *>&1 | Out-Null}"
         "}",
         "if (Test-Path \"$dir\\vscode-uninstall-context.reg\") {",
         "  $content = Get-Content \"$dir\\vscode-uninstall-context.reg\"",
