@@ -3,4 +3,5 @@ Windows Registry Editor Version 5.00
 [-HKEY_CLASSES_ROOT\WeWork]
 [-HKEY_CURRENT_USER\SOFTWARE\Tencent\WXWork]
 [-HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork]
-[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\WXWork]
+[-HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run]
+WXWork=-
