@@ -7,14 +7,14 @@
         "running: \"$dir\\wxwork-install-context.reg\""
     ],
     "url": [
-              "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wechat.7z",
+              "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wecom.7z",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-uninstall-context.reg"
            ],
     "hash": [
               "ccace1b922c2f231fa6045bd9b4f6cb60c3277e9e60812f0809922f7e43438db",
               "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585",
-              "998181710fb710c3dcb47996510945ef1b68f38a25cffae30da412a56791fc27"
+              "94fbb82b482ae66250a75c4d58bdf4b6ee4c155596171c560bf75c367ca04600"
            ],
     "shortcuts": [
         [
@@ -49,8 +49,10 @@
     ],
     "uninstaller": {
         "script": [
+            "$appdata = [Environment]::GetFolderPath('ApplicationData')",
+            "$n_appdata = $appdata.Replace('\\' , '\\\\') ",
             "reg import \"$dir\\wxwork-uninstall-context.reg\"",
-            "Remove-Item '$env:APPDATA\\Tencent\\WXWork' -Recurse"
+            "Remove-Item \"$n_appdata\\Tencent\\WXWork\" -Force -Recurse"
         ]
     },
     "checkver": {
@@ -58,6 +60,6 @@
         "regex": "WeCom_([\\d.]+).exe"
     },
     "autoupdate": {
-        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wechat.7z"
+        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wecom.7z"
     }
 }
