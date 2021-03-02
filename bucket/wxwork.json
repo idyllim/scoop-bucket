@@ -4,7 +4,7 @@
     "version": "3.1.2.2211",
     "license": "Freeware",
     "notes": [
-        "running: \"$dir\\wxwork-install-context.reg\""
+        "WxWork data persist in: \"$persist_dir\""
     ],
     "url": [
               "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.2.2211.exe#/wecom.7z",
