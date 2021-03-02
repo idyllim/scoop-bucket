@@ -48,7 +48,10 @@
         "Invoke-Command {reg import $dir\\wxwork-install-context.reg *>&1 | Out-Null}"
     ],
     "uninstaller": {
-        "script": "reg import \"$dir\\wxwork-uninstall-context.reg\""
+        "script": [
+            "reg import \"$dir\\wxwork-uninstall-context.reg\"",
+            "Remove-Item '$env:APPDATA\Tencent\WXWork' -Recurse"
+        ]
     },
     "checkver": {
         "url": "https://api.ziiyc.com/?url=https://work.weixin.qq.com/wework_admin/commdownload?platform=win&from=wwindex",
