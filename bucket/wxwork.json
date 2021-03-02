@@ -49,7 +49,7 @@
     ],
     "uninstaller": {
         "script": [
-            "  $n_dir = $dir.Replace('\\' , '\\\\')",
+            "  $n_dir = $env:APPDATA.Replace('\\' , '\\\\')",
             "reg import \"$dir\\wxwork-uninstall-context.reg\"",
             "Remove-Item '$env:APPDATA\\Tencent\\WXWork' -Recurse"
         ]
