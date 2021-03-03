@@ -13,8 +13,8 @@
     ],
     "hash": [
         "af134a16b35528c572ef66a331e3f4cd0e19c285cb8ae27d80cd0ecf5f5cb714",
-        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-install-context.reg.sha256",
-        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-uninstall-context.reg.sha256"
+        "7aa23d39571114d6b33d413caf88754fb68055fe22903d65a2eeeb8192a60cb9",
+        "41f24f9181a090931a39b34d90ebf5ebb848425615d495517f2641ecc91a5fe6"
     ],
     "shortcuts": [
         [
@@ -55,5 +55,8 @@
             "Remove-Item \"$n_appdata\\Tencent\\WeChatApp\" -Force -Recurse"
         ]
     },
-    "notes": "We persist your WeChat data, they are storaged in '$persist_dir'."
+    "notes": [
+        "We persist your WeChat data, they are storaged in '$persist_dir'.",
+        "如果有以下提示，\"文件默认保存位置无法使用，将不能正常使用微信，请更改位置。\",请检查文件夹权限是否未只读"
+    ]
 }
