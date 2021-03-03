@@ -1,0 +1,59 @@
+{
+    "homepage": "https://weixin.qq.com/",
+    "description": "Free messaging and calling app.",
+    "version": "3.1.0.72",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
+    },
+    "url": [
+        "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.1.0.72.exe#/dl.7z",
+        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-install-context.reg",
+        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-uninstall-context.reg"
+    ],
+    "hash": [
+        "af134a16b35528c572ef66a331e3f4cd0e19c285cb8ae27d80cd0ecf5f5cb714",
+        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-install-context.reg.sha256",
+        "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-uninstall-context.reg.sha256"
+    ],
+    "shortcuts": [
+        [
+            "wechat.exe",
+            "WeChat"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pc.qq.com/detail/8/detail_11488.html",
+        "regex": "WeChatSetup_([\\d+.]+\\d+).exe"
+    },
+    "autoupdate": {
+        "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_$version.exe#/dl.7z"
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
+        "Remove-Item \"$dir\\`$_15_\" -Force -Recurse",
+        "Remove-Item \"$dir\\`$R5\" -Force -Recurse",
+        "if (Test-Path \"$dir\\wechat-install-context.reg\") {",
+        "  $n_dir = $dir.Replace('\\' , '\\\\')",
+        "  $n_persist_dir = $persist_dir.Replace('\\' , '\\\\')",
+        "  $content = Get-Content \"$dir\\wechat-install-context.reg\"",
+        "  $content = $content.Replace('$wechat', $n_dir)",
+        "  $content = $content.Replace('$persist_dir', $n_persist_dir)",
+        "  if ($global) {",
+        "    $content = $content.Replace('HKEY_CURRENT_USER', 'HKEY_LOCAL_MACHINE')",
+        "  }",
+        "  $content | Set-Content -Path \"$dir\\wechat-install-context.reg\"",
+        "  Invoke-Command {reg import $dir\\wechat-install-context.reg *>&1 | Out-Null}",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$appdata = [Environment]::GetFolderPath('ApplicationData')",
+            "$n_appdata = $appdata.Replace('\\' , '\\\\') ",
+            "reg import \"$dir\\wechat-uninstall-context.reg\"",
+            "Remove-Item \"$n_appdata\\Tencent\\WeChat\" -Force -Recurse",
+            "Remove-Item \"$n_appdata\\Tencent\\WeChatApp\" -Force -Recurse"
+        ]
+    },
+    "notes": "We persist your WeChat data, they are storaged in '$persist_dir'."
+}

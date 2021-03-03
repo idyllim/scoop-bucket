@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Tencent\WeChat]
+"FileSavePath"="$persist_dir"
+"LANG_ID"=dword:00000004
+"CrashVersion"=dword:63010043
+"CrashCnt"=dword:00000000
+[HKEY_CURRENT_USER\SOFTWARE\Tencent\bugReport\WechatWindows]
+"InstallDir"="$wechat"
