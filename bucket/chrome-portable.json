@@ -1,5 +1,5 @@
 {
-    "version": "88.0.4324.190",
+    "version": "89.0.4389.90",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/release2/chrome/AO1CIN0Aa5eN82pGa0YbHrQ_88.0.4324.190/88.0.4324.190_chrome_installer_10mb_blob.exe#/dl.7z",
-            "hash": "61D9F3E876A6E048F465300F8E97C5AEB286BD9EA4CB448B6EC4E3B7CB8FC3BC"
+            "url": "https://dl.google.com/release2/chrome/GhyeF19qcgzTvU87ncEAdQ_89.0.4389.90/89.0.4389.90_chrome_installer.exe#/dl.7z",
+            "hash": "E7BCDD4DE8A42EDC5B92CC0883C4529CF8E3C0A2"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/AJ4ASLNrj8K9KWssbN71uiM_88.0.4324.190/88.0.4324.190_chrome_installer_1mb_blob.exe#/dl.7z",
-            "hash": "11D126D2DFB24E5E11C1ABCE1D05A0E842359809A0D02FBA319C4AABF708FD7D"
+            "url": "https://dl.google.com/release2/chrome/AOg3zEhDaLHfbRIEco7Em2A_89.0.4389.90/89.0.4389.90_chrome_installer.exe#/dl.7z",
+            "hash": "84416A3CBFAFB8569A59815264814B86DB899669"
         }
     },
     "pre_install": "Expand-7zipArchive \"$dir\\chrome.7z\" -ExtractDir 'Chrome-bin' -Removal",
