@@ -13,7 +13,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.dbeaver.com/enterprise/21.1.0/dbeaver-ee-21.1.0-win32.win32.x86_64.zip",
-            "hash": "e2525bd9496b71d10482551e47e4a50d4bb9dabcf32ec87014969fe6e0ce5c9d"
+            "hash": "464a7742294a18add6496e9f088c450c99a267a0e53fc12635267117a6b49c54"
         }
     },
     "extract_dir": "dbeaver",
@@ -29,12 +29,12 @@
     ],
     "checkver": {
         "url": "https://dbeaver.io/download/",
-        "regex": "Community Edition ([\\d.]+)"
+        "regex": "Enterprise Edition ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dbeaver.io/files/$version/dbeaver-ee-$version-win32.win32.x86_64.zip"
+                "url": "https://dbeaver.com/files/dbeaver-ee-latest-win32.win32.x86_64.zip"
             }
         },
         "hash": {
