@@ -1,20 +1,15 @@
 {
     "homepage": "https://work.weixin.qq.com/",
     "description": "企业微信",
-    "version": "3.1.7.3005",
+    "version": "nightly",
     "license": "Freeware",
     "notes": [
         "WxWork data persist in: \"$persist_dir\""
     ],
     "url": [
-              "https://dldir1.qq.com/wework/work_weixin/WeCom_3.1.7.3005.exe#/wecom.7z",
+              "https://work.weixin.qq.com/wework_admin/commdownload?platform=win&from=wwindex#/wechat-work.7z",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-uninstall-context.reg"
-           ],
-    "hash": [
-              "8d26751540e49da503b198554502432e1992afe59cba1f0e2aff409a56c7747b",
-              "26f086d2977a8298019b861f5b1708441de1d7494121c8d16a10c92b2c92e585",
-              "94fbb82b482ae66250a75c4d58bdf4b6ee4c155596171c560bf75c367ca04600"
            ],
     "shortcuts": [
         [
@@ -54,12 +49,5 @@
             "reg import \"$dir\\wxwork-uninstall-context.reg\"",
             "Remove-Item \"$n_appdata\\Tencent\\WXWork\" -Force -Recurse"
         ]
-    },
-    "checkver": {
-        "url": "https://api.ziiyc.com/?url=https://work.weixin.qq.com/wework_admin/commdownload?platform=win&from=wwindex",
-        "regex": "WeCom_([\\d.]+).exe"
-    },
-    "autoupdate": {
-        "url": "https://dldir1.qq.com/wework/work_weixin/WeCom_$version.exe#/wecom.7z"
     }
 }
