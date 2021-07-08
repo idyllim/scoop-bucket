@@ -1,20 +1,15 @@
 {
     "homepage": "https://weixin.qq.com/",
     "description": "Free messaging and calling app.",
-    "version": "3.2.1.134",
+    "version": "nightly",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
     "url": [
-        "https://dl.softmgr.qq.com/original/im/WeChatSetup_3.2.1.134.exe#/dl.7z",
+        "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/wechat.7z",
         "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-install-context.reg",
         "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-uninstall-context.reg"
-    ],
-    "hash": [
-        "3f246e67bfa9529b5b4f186fd495ebc4dc9b0ccdd84651b04531395b2d5ff39e",
-        "7aa23d39571114d6b33d413caf88754fb68055fe22903d65a2eeeb8192a60cb9",
-        "41f24f9181a090931a39b34d90ebf5ebb848425615d495517f2641ecc91a5fe6"
     ],
     "shortcuts": [
         [
@@ -22,13 +17,6 @@
             "WeChat"
         ]
     ],
-    "checkver": {
-        "url": "https://pc.qq.com/detail/8/detail_11488.html",
-        "regex": "WeChatSetup_([\\d+.]+\\d+).exe"
-    },
-    "autoupdate": {
-        "url": "https://dl.softmgr.qq.com/original/im/WeChatSetup_$version.exe#/dl.7z"
-    },
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
         "Remove-Item \"$dir\\`$_15_\" -Force -Recurse",
