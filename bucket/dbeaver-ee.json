@@ -1,5 +1,5 @@
 {
-    "version": "21.1.0",
+    "version": "21.2.0",
     "description": "Database tool for developers, SQL programmers, database administrators and analysts",
     "homepage": "https://dbeaver.io",
     "license": "Apache-2.0",
@@ -12,8 +12,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.dbeaver.com/enterprise/21.1.0/dbeaver-ee-21.1.0-win32.win32.x86_64.zip",
-            "hash": "464a7742294a18add6496e9f088c450c99a267a0e53fc12635267117a6b49c54"
+            "url": "https://download.dbeaver.com/enterprise/21.2.0/dbeaver-ee-21.2.0-win32.win32.x86_64.zip",
+            "hash": "57b78dc5f06133b2870838cf12a9b3bdc6ae9b6f1ee34034e719b3f769c36038"
         }
     },
     "extract_dir": "dbeaver",
