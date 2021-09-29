@@ -5,7 +5,7 @@
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/idyllim/scoop-bucket/releases/download/firefox-tete009.92.0.1/firefox-92.0.1-2021092216.en-US.win32-tete009-x64-pgo.7z",
+            "url": "https://github.com/idyllim/scoop-bucket/releases/download/firefox-tete009/firefox-92.0.1-2021092216.en-US.win32-tete009-x64-pgo.7z",
             "hash": "024f01fb0f8e4a0e79d17c16888182abc23e5303c089c1894bc887e787b5613e",
             "extract_dir": "firefox-92.0.1-2021092216.en-US.win32-tete009-x64-pgo"
         }
