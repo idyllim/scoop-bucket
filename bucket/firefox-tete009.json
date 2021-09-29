@@ -24,6 +24,10 @@
         "url": "https://github.com/idyllim/scoop-bucket/releases/tag/firefox-tete009",
         "regex": "firefox-([\\d.]+)-(?<date>\\d+)"
     },
+    "persist": [
+        "PortableData",
+        "tmemutil.ini"
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
