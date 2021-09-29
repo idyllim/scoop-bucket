@@ -7,6 +7,7 @@
       "https://github.com/idyllim/scoop-bucket/releases/download/firefox-tete009/firefox-92.0.1-2021092216.en-US.win32-tete009-x64-pgo.7z",
       "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/tmemutil.ini"
     ],
+    "extract_dir": "firefox-92.0.1-2021092216.en-US.win32-tete009-x64-pgo",
     "bin": "firefox.exe",
     "shortcuts": [
         [
