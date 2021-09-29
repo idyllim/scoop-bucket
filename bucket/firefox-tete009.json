@@ -20,8 +20,7 @@
         "regex": "firefox-([\\d.]+)-(?<date>\\d+)"
     },
     "persist": [
-        "PortableData",
-        "tmemutil.ini"
+        "PortableData"
     ],
     "autoupdate": {
         "architecture": {
