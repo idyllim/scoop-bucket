@@ -1,7 +1,7 @@
 {
     "homepage": "https://weixin.qq.com/",
     "description": "Free messaging and calling app.",
-    "version": "nightly",
+    "version": "3.4.0",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
@@ -40,7 +40,8 @@
             "$n_appdata = $appdata.Replace('\\' , '\\\\') ",
             "reg import \"$dir\\wechat-uninstall-context.reg\"",
             "Remove-Item \"$n_appdata\\Tencent\\WeChat\" -Force -Recurse",
-            "Remove-Item \"$n_appdata\\Tencent\\WeChatApp\" -Force -Recurse"
+            "Remove-Item \"$n_appdata\\Tencent\\WeChatApp\" -Force -Recurse",
+            "Remove-Item -R -Path \"$dir\\`$R5\",\"$dir\\`$_15_\",\"$dir\\`$PLUGINSDIR\""
         ]
     },
     "notes": [
