@@ -17,7 +17,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Tencent\WXWork]
 "DataLocation"=dword:00000000
 "Version"="$ver"
-"Executable"="$scoopdir\\$app\\WXWork.exe"
+"Executable"="$scoopdir\\apps\\$app\\current\\WXWork.exe"
 "multi_instances"=dword:00000000
 "Migrating"=dword:00000000
 "DataLocationPath"="$persist_dir"
