@@ -21,4 +21,4 @@ Windows Registry Editor Version 5.00
 "multi_instances"=dword:00000000
 "Migrating"=dword:00000000
 "DataLocationPath"="$persist_dir"
-"WeMeetDir"="$scoopdir\\apps\\$app\\current\\$ver\WeMeet"
+"WeMeetDir"="$wxwork\\$ver\\WeMeet"
