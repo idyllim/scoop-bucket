@@ -1,7 +1,7 @@
 {
     "homepage": "https://work.weixin.qq.com/",
     "description": "企业微信",
-    "version": "4.0.8.6023",
+    "version": "4.0.8.6027",
     "license": "Freeware",
     "notes": [
         "WxWork data persist in: \"$persist_dir\""
