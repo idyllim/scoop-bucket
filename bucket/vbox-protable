@@ -1,0 +1,18 @@
+{
+    "homepage": "https://work.weixin.qq.com/",
+    "description": "VBox",
+    "version": "6.5.1",
+    "license": "Freeware",
+    "notes": [
+        "WxWork data persist in: \"$persist_dir\""
+    ],
+    "url": [
+              "https://github.com/timsky/Portable-VirtualBox/releases/download/Release/Portable-VirtualBox-6-5-11.7z"
+           ],
+    "shortcuts": [
+        [
+            "VBox.exe",
+            "VirtualBox"
+        ]
+    ]
+}
