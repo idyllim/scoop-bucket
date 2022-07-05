@@ -7,7 +7,7 @@
         "WxWork data persist in: \"$persist_dir\""
     ],
     "url": [
-              "https://work.weixin.qq.com/wework_admin/commdownload?platform=win&from=wwindex#/wechat-work.7z",
+              "https://github.com/idyllim/scoop-bucket/releases/download/wxwork.4.0.8.6027/WXWork.4.0.8.6027.zip#/wechat-work.7z",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-uninstall-context.reg"
            ],
