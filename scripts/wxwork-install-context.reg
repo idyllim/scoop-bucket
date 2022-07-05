@@ -14,6 +14,7 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\WeWork\shell\open\command]
 @="\"$wxwork\\$ver\\WXWorkCommand.exe\" \"%1\""
 
+; 配置，腾讯会议
 [HKEY_CURRENT_USER\SOFTWARE\Tencent\WXWork]
 "DataLocation"=dword:00000000
 "Version"="$ver"
@@ -22,3 +23,33 @@ Windows Registry Editor Version 5.00
 "Migrating"=dword:00000000
 "DataLocationPath"="$persist_dir"
 "WeMeetDir"="$wxwork\\$ver\\WeMeet"
+
+; 企业微信WXWORK
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork]
+@="WXWorkProtocol"
+"URL Protocol"="$wxwork\\$ver\\WXWorkCommand.exe"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork\DefaultIcon]
+@="$wxwork\\$ver\\WXWorkCommand.exe,1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WXWork\shell\open\command]
+@="\"$wxwork\\$ver\\WXWorkCommand.exe\" \"%1\""
+
+; 企业微信WeDrive
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WeDrive]
+@="WXWorkProtocol"
+"URL Protocol"="$wxwork\\$ver\\WXWorkCommand.exe"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WeDrive\DefaultIcon]
+@="$wxwork\\$ver\\WXWorkCommand.exe,1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WeDrive\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WeDrive\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\WeDrive\shell\open\command]
+@="\"$wxwork\\$ver\\WXWorkCommand.exe\" \"%1\""
