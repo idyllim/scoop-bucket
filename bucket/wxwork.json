@@ -7,7 +7,7 @@
         "WxWork data persist in: \"$persist_dir\""
     ],
     "url": [
-              "http://qw-album.oss-cn-shanghai.aliyuncs.com/class-album-dev/tmp/WXWork.zip#/wxwork.7z",
+              "https://dldir1.qq.com/wework/work_weixin/WeCom_4.0.16.6007.exe#/wxwork.7z",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-install-context.reg",
               "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wxwork-uninstall-context.reg"
            ],
