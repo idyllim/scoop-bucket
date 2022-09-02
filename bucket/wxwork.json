@@ -50,9 +50,8 @@
             "$appdata = [Environment]::GetFolderPath('ApplicationData')",
             "$n_appdata = $appdata.Replace('\\' , '\\\\') ",
             "reg import \"$dir\\wxwork-uninstall-context.reg\"",
-             
             "if (Test-Path \"$n_appdata\\Tencent\\WXWork\") {",
-                "  Remove-Item \"$n_appdata\\Tencent\\WXWork\" -Force -Recurse"
+                "  Remove-Item \"$n_appdata\\Tencent\\WXWork\" -Force -Recurse",
             "}",
             "Remove-Item -R -Path \"$dir\\Uninstall.exe\",\"$dir\\`$PLUGINSDIR\""
         ]
