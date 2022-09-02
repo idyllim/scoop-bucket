@@ -42,7 +42,7 @@
         "}",
         "Invoke-Command {reg import $dir\\wxwork-install-context.reg *>&1 | Out-Null}",
         "if (Test-Path \"$dir\\$version\\$version\\wemeet.zip\") {",
-        "  7z.exe $dir\\$version\\$version\\wemeet.zip -o$dir\\$version\\$version\\wemeet",
+        "  7z.exe \"$dir\\$version\\$version\\wemeet.zip\" -o$\"dir\\$version\\$version\\wemeet\" ",
         "}"
     ],
     "uninstaller": {
