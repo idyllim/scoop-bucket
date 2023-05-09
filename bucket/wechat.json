@@ -1,13 +1,13 @@
 {
     "homepage": "https://weixin.qq.com/",
     "description": "Free messaging and calling app.",
-    "version": "3.7.5",
+    "version": "3.9.5.39",
     "license": {
         "identifier": "EULA",
         "url": "https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=default"
     },
     "url": [
-        "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/wechat.7z",
+        "https://github.com/idyllim/scoop-bucket/releases/download/wechat.3.9.5.39/wechat.exe#/wechat.7z",
         "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-install-context.reg",
         "https://raw.githubusercontent.com/idyllim/scoop-bucket/main/scripts/wechat-uninstall-context.reg"
     ],
