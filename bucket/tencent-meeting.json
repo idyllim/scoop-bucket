@@ -1,11 +1,11 @@
 {
-    "version": "3.16.2.510",
+    "version": "3.16.7.405",
     "description": "tencent meeting",
     "homepage": "https://meeting.tencent.com/index.html",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://updatecdn.meeting.qq.com/cos/e68b7ec721048ba08757e2fe2579afe6/VooVMeeting_1410000197_3.16.2.510.publish.exe#/dl.7z",
+    "url": "https://updatecdn.meeting.qq.com/cos/8bbce2cbe3c709e72fb78db246a53596/TencentMeeting_0300000000_3.16.7.405.publish.officialwebsite.exe#/dl.7z",
     "installer": {
         "script": [
             "Get-Item \"$dir\\`$_?_\" | Rename-Item -NewName \"$version\"",
