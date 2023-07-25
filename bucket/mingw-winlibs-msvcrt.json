@@ -10,18 +10,5 @@
       "extract_dir": "mingw64"
     }
   },
-  "env_add_path": "bin",
-  "checkver": {
-      "regex": "/download/(?<version>((?<gccVersion>13[\\d.]+)-(?<llvmVersion>[\\d.]+)-(?<mingwVersion>[\\d.]+)-ucrt-(?<revision>[\\w]+)))"
-  },
-  "autoupdate": {
-      "architecture": {
-          "64bit": {
-              "url": "https://github.com/brechtsanders/winlibs_mingw/releases/download/$version/winlibs-x86_64-mcf-seh-gcc-$matchGccversion-llvm-$matchLlvmversion-mingw-w64msvcrt-$matchMingwversion-$matchRevision.7z"
-          }
-      },
-      "hash": {
-          "url": "$url.sha256"
-      }
-  }
+  "env_add_path": "bin"
 }
