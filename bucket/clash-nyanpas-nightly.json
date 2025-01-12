@@ -15,7 +15,8 @@
         "jsonpath": "$.version"
     },
     "persist": [
-        ".config"
+        ".config",
+        ".data"
     ],
     "autoupdate": {
        "url": "https://github.com/libnyanpasu/clash-nyanpasu/releases/download/pre-release/Clash.Nyanpasu_$version_x86_64_fixed-webview_portable.zip"
