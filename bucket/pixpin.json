@@ -10,6 +10,7 @@
             "PixPin"
         ]
     ],
+    "extract_dir": "PixPin",
     "checkver": {
         "url": "https://github.com/idyllim/scoop-bucket/releases/tag/pixpin-portable",
         "regex": "PixPin Version ([\\d.]+)"
