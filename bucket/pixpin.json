@@ -1,9 +1,9 @@
 {
-    "version": "1.5.0.0",
+    "version": "1.7.6.0",
     "description": "PixPin 拥有强大的截图功能，但不只是一款截图工具.",
     "homepage": "https://pixpin.cn/",
     "license": "Unknown",
-    "url": "https://github.com/idyllim/scoop-bucket/releases/download/pixpin-portable/PixPin_1.5.0.0.zip",
+    "url": "https://github.com/idyllim/scoop-bucket/releases/download/pixpin-portable/PixPin_1.7.6.0.zip",
     "shortcuts": [
         [
             "PixPin.exe",
