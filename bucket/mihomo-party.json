@@ -17,7 +17,6 @@
             "hash": "ff0bc0584991709f0bdf5161b18483f0d48fd3cc491a25ff7912d46b74d84694"
         }
     },
-    "persist": "data",
     "shortcuts": [
         [
             "Mihomo Party.exe",
@@ -25,6 +24,7 @@
             "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
+    "persist": "data",
     "checkver": {
         "github": "https://github.com/mihomo-party-org/mihomo-party"
     },
