@@ -24,7 +24,7 @@
             "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
-    "persist": "data",
+    "persist": ["data","User Data"],
     "checkver": {
         "github": "https://github.com/mihomo-party-org/mihomo-party"
     },
