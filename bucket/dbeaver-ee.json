@@ -21,7 +21,6 @@
             "-data \"$dir\\DBeaverData\""
         ]
     ],
-],
     "persist": ["DBeaverData"],
     "checkver": {
         "url": "https://dbeaver.io/download/",
