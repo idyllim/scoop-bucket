@@ -17,8 +17,8 @@
     "shortcuts": [
         [
             "dbeaver.exe",
-            "DBeaver",
-            "--user-data-dir=\"$dir\\DBeaverData\""
+            "DBeaverUE",
+            "-data \"$dir\\DBeaverData\""
         ]
     ],
 ],
