@@ -1,6 +1,6 @@
 {
     "version": "1.8.9",
-    "description": "Another Mihomo GUI.",
+    "description": "Another Clash GUI.",
     "homepage": "https://mihomo.party",
     "license": "GPL-3.0",
     "architecture": {
@@ -16,8 +16,8 @@
     },
     "shortcuts": [
         [
-            "Mihomo Party.exe",
-            "Mihomo Party",
+            "Clash Party.exe",
+            "Clash Party",
             "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
