@@ -7,6 +7,7 @@
         "url": "https://tms.dingtalk.com/markets/dingtalk/service-terms-zh"
     },
     "url": "https://dtapp-cast.dingtalk.com/202608071708/25f6017538eab353e4bb924da6723b27/dingtalk-desktop/win_installer/Release/DingTalk_v8.2.0.260119001.exe#/dl.7z",
+    "hash": "c4664b74f7b688fcbe30b951632eb6b0abb820703908835695b5f82f8431cf56",
     "pre_install": [
         "ensure \"$dir\\main\\current\" | Out-Null",
         "Move-Item \"$dir\\build\\dist\\*\" \"$dir\\main\\current\" -Force | Out-Null",
