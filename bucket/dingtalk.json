@@ -1,13 +1,12 @@
 {
-    "version": "v8.2.0.260119001",
+    "version": "8.3.5.260328004",
     "description": "钉钉，企业协作与办公沟通平台。",
     "homepage": "https://www.dingtalk.com/",
     "license": {
         "identifier": "EULA",
         "url": "https://tms.dingtalk.com/markets/dingtalk/service-terms-zh"
     },
-    "url": "https://dtapp-cast.dingtalk.com/202608071708/25f6017538eab353e4bb924da6723b27/dingtalk-desktop/win_installer/Release/DingTalk_v8.2.0.260119001.exe#/dl.7z",
-    "hash": "c4664b74f7b688fcbe30b951632eb6b0abb820703908835695b5f82f8431cf56",
+    "url": "http://192.168.1.15/share/8.3.5-Release.260328004.exe#/dl.7z",
     "pre_install": [
         "ensure \"$dir\\main\\current\" | Out-Null",
         "Move-Item \"$dir\\build\\dist\\*\" \"$dir\\main\\current\" -Force | Out-Null",
