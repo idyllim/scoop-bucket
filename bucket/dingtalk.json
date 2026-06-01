@@ -15,7 +15,7 @@
         "Remove-Item \"$dir\\DingTalkUpdater.exe\" -Force | Out-Null"
     ],
     "post_install": [
-        ". \"$bucketsdir\\bin\\utils.ps1\"",
+        ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
         "Write-Host (\"`nPersisting $env:APPDATA\\DingTalk ... \") -NoNewline",
         "New-PersistDirectory \"$env:APPDATA\\DingTalk\" \"$persist_dir\\AppData\" -Migrate",
         "if ($global) {",
@@ -47,12 +47,12 @@
     ],
     "pre_uninstall": [
         "$bucket = $install.bucket",
-        ". \"$bucketsdir\\bin\\utils.ps1\"",
+        ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
         "Stop-App"
     ],
     "post_uninstall": [
         "$bucket = $install.bucket",
-        ". \"$bucketsdir\\bin\\utils.ps1\"",
+        ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
         "$localPaths = @(",
         "    \"$env:APPDATA\\DingTalk\"",
         "    \"$env:APPDATA\\dinglive\"",
