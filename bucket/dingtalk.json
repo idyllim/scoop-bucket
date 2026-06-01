@@ -1,12 +1,12 @@
 {
-    "version": "8.3.23.260527009",
+    "version": "7.8.10.250728001",
     "description": "钉钉，企业协作与办公沟通平台。",
     "homepage": "https://www.dingtalk.com/",
     "license": {
         "identifier": "EULA",
         "url": "https://tms.dingtalk.com/markets/dingtalk/service-terms-zh"
     },
-    "url": "http://192.168.1.15/share/8.3.23-Release.260527009.exe#/dl.7z",
+    "url": "http://192.168.1.15/share/7.8.10-Release.250728001.exe#/dl.7z",
     "pre_install": [
         "ensure \"$dir\\main\\current\" | Out-Null",
         "Move-Item \"$dir\\build\\dist\\*\" \"$dir\\main\\current\" -Force | Out-Null",
@@ -81,14 +81,5 @@
             "钉钉"
         ]
     ],
-    "checkver": {
-        "script": [
-            "$response = [System.Net.HttpWebRequest]::Create('https://www.dingtalk.com/win/d/qd=oversea?spm=a213l2.14171110.4290834532.4.63e32726MyWurc').GetResponse()",
-            "$finalUrl = $response.ResponseUri.AbsoluteUri",
-            "Write-Output $finalUrl",
-            "$response.Close()"
-        ],
-        "regex": "DingTalk_v([\\d.]+)\\.exe"
-    },
     "notes": "User data is persisted in \"$persist_dir\"."
 }
